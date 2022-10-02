@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double Jenis_BBM, Jumlah_BBM, Harga_BBM, Jarak_Tempuh;
+    cout << "jenis BBM\n1=Pertalite\n2=Pertamax\n3=Pertamax Turbo\n4=Pertamina Dex\n :";
+    cin >> Jenis_BBM;
+    cout << "Jumlah BBM :";
+    cin >> Jumlah_BBM;
+    if (Jenis_BBM == 1)
+    {    Harga_BBM = Jumlah_BBM*10000;
+        Jarak_Tempuh = Jumlah_BBM*50;
+        cout<<"Jarak tempuh untuk "<<Jumlah_BBM<<" liter Pertalite adalah "<<Jarak_Tempuh<<" Kilometer dengan harga "<<Harga_BBM<<" Rupiah";
+    }
+    else if (Jenis_BBM == 2)
+    {    Harga_BBM = Jumlah_BBM*14000;
+        Jarak_Tempuh = Jumlah_BBM*50;
+        cout<<"Jarak tempuh untuk "<<Jumlah_BBM<<" liter Pertamax adalah "<<Jarak_Tempuh<<" Kilometer dengan harga "<<Harga_BBM<<" Rupiah";
+    }
+    else if (Jenis_BBM == 3)
+    {    Harga_BBM = Jumlah_BBM*15000;
+        Jarak_Tempuh = Jumlah_BBM*50;
+        cout<<"Jarak tempuh untuk "<<Jumlah_BBM<<" liter Pertamax Turbo adalah "<<Jarak_Tempuh<<" Kilometer dengan harga "<<Harga_BBM<<" Rupiah";
+    }
+    else if (Jenis_BBM == 4)
+    {    Harga_BBM = Jumlah_BBM*18100;
+        Jarak_Tempuh = Jumlah_BBM*50;
+        cout<<"Jarak tempuh untuk "<<Jumlah_BBM<<" liter Pertamina Dex adalah "<<Jarak_Tempuh<<" Kilometer dengan harga "<<Harga_BBM<<" Rupiah\n";
+    }
+    cout<<"\n!!! Berasarkan harga BBM dari web https://mypertamina.id/fuels-harga untuk daerah DI Yogyakarta pada Tanggal 1 Oktober 2022 dan jarak tempuh rata2 motor untuk setiap liter. Kenyataan mungkin bisa berbeda tergantung kendaraan dan harga BBM di daerah anda !!!";
+    return 0;
+}
